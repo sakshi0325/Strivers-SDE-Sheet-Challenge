@@ -1,5 +1,5 @@
 vector<int> v;
-    vector<int> inorderTraversal(TreeNode* root) {
+    vector<int> inorderTraversal(TreeNode* root){
      if(root==NULL) return v;
      inorderTraversal(root->left);
      v.push_back(root->val);
