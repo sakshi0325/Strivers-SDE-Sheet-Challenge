@@ -1,16 +1,15 @@
-//Function to push an element x in a queue.
-void MyQueue :: push(int x)
+void MyStack :: push(int x)
 {
-        if(rear==100005) return;
-        arr[rear]=x;
-        rear++;
+    if(top==999) return;
+    top++;
+    arr[top]=x;
 }
 
-//Function to pop an element from queue and return that element.
-int MyQueue :: pop()
+//Function to remove an item from top of the stack.
+int MyStack :: pop()
 {
-        if(rear==front) return -1;
-        int x = arr[front];
-        front++;
-        return x;
+    if(top==-1) return -1;
+    int x = arr[top];
+    top--;
+    return x;
 }
