@@ -1,4 +1,3 @@
-public:
 int maxdepth=0;
     int height(int maxDepth, TreeNode* root)
     {
